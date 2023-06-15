@@ -88,6 +88,23 @@ async function buildIcons(package, style, format) {
 
   let icons = await getIcons(style)
 
+  if(package == "vue"){
+
+    // await ensureWriteJson(`./${package}/hero-${style}.json`, icons)
+
+    const kebabize = (str) => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? "-" : "") + $.toLowerCase())
+
+    // console.log(words.map(kebabize));
+
+    let allIcons = {}
+
+    for (var i = 0; i < icons.length; i++) {
+      allIcons[kebabize(icons[i].componentName).replace("-icon","")] = icons[i].svg
+    }
+
+    await ensureWrite(`./${package}/hero${style.replace("/","")}.js`, `export default ${JSON.stringify(allIcons)}`)
+  }
+
   await Promise.all(
     icons.flatMap(async ({ componentName, svg }) => {
       let content = await transform[package](svg, componentName, format)
