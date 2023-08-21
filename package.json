@@ -2,11 +2,6 @@
   "name": "heroicons",
   "version": "2.0.18",
   "license": "MIT",
-  "files": [
-    "20/",
-    "24/",
-    "README.md"
-  ],
   "scripts": {
     "prepublishOnly": "npm run build",
     "lint": "node ./scripts/verify-names.js",
