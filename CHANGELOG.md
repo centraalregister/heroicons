@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Nothing yet!
 
+## [2.1.1] - 2023-12-18
+
+### Fixed
+
+- Fixed chevrons in mini set ([#1106](https://github.com/tailwindlabs/heroicons/pull/1106))
+
+## [2.1.0] - 2023-12-18
+
+### Added
+
+- Added micro icon set ([#1104](https://github.com/tailwindlabs/heroicons/pull/1104))
+- Rebuilt some icons for better clarity ([#1104](https://github.com/tailwindlabs/heroicons/pull/1104))
+
 ## [2.0.18] - 2023-05-09
 
 ### Fixed
@@ -224,7 +237,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/heroicons/compare/v2.0.18...HEAD
+[unreleased]: https://github.com/tailwindlabs/heroicons/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/tailwindlabs/heroicons/compare/v2.0.18...v2.1.0
 [2.0.18]: https://github.com/tailwindlabs/heroicons/compare/v2.0.17...v2.0.18
 [2.0.17]: https://github.com/tailwindlabs/heroicons/compare/v2.0.16...v2.0.17
 [2.0.16]: https://github.com/tailwindlabs/heroicons/compare/v2.0.15...v2.0.16
