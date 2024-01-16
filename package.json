@@ -3,9 +3,7 @@
   "version": "2.1.1",
   "license": "MIT",
   "files": [
-    "16/",
-    "20/",
-    "24/",
+    "vue/",
     "README.md"
   ],
   "scripts": {
